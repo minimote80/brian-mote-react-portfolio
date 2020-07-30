@@ -1,0 +1,63 @@
+.content-wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 85px);
+   
+
+    .right-column {
+        background: white;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 85px);
+    }
+
+    .contact-bullet-points {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 21px;
+
+        .bullet-point-group {
+            display: flex;
+
+            .icon {
+                
+                a { 
+                    font-size: 2em;
+                    color: $teal;
+                    
+                }
+                
+                #phone-icon :hover {
+                    color: #32CD32;
+                    transition: .5s ease-in-out;
+                }
+
+                #email-icon :hover {
+                    color: #D44638;
+                    transition: .5s ease-in-out;
+                }
+
+                #linkedin-icon :hover{
+                    color: #0e76a8 ;
+                    transition: .5s ease-in-out;
+                }
+                
+            }
+
+            .text {
+                font-size: 1.5em;
+                font-weight: 900;
+                margin-left: 21px; 
+            }
+        }
+    }
+
+    .about-me-content-wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
